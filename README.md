@@ -1,1 +1,1 @@
-# Blog Website - 
+# Daily Journal Website - 
