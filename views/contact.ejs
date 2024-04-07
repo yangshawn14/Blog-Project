@@ -1,4 +1,24 @@
 <%- include("partials/header"); -%>
     <h1>Contact</h1>
-    <p> <%= contactContent %> </p>
-<%- include("partials/footer"); -%>
+    <p>
+        <%= contactContent %>
+    </p>
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <%- include("partials/footer"); -%>

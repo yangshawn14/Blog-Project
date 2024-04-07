@@ -4,37 +4,121 @@ html {
 }
 
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
+
+/* Contact Page */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  display: block;
+  width: 100%;
+  /* max-width: 19rem; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 210px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input:required {
+  border-left: red solid 6px;
+}
+
+input:required:valid {
+  border-left: green solid 6px;
+}
+
+.contact-form form {
+  max-width: 600px;
+}
+
+/* .contact-form .form-group {
+  text-align: -webkit-center;
+} */
+
+.contact-form label {
+  display: inline-block;
+  /* text-align: left;
+  width: 54%; */
+}
+
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
 }
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
 }
 
 .footer-padding {
-	padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1abc9c;
 }
 
 .footer p {
-	margin-top: 25px;
-	font-size: 12px;
+  margin-top: 25px;
+  font-size: 12px;
   color: #fff;
 }
